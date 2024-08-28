@@ -1,0 +1,192 @@
+/* Style */
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', sans-serif;
+	color: #010101;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	position: fixed; /* Menetapkan posisi tetap */
+    top: 0;
+    left: 0;
+    width: 100%; /* Membuat navbar memenuhi lebar layar */
+	background-color: #010101;
+    color: white;
+    padding: 10px 0px;
+    z-index: 1000; /* Memastikan navbar di atas elemen lain */
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 10px;
+	margin-right:10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fcfb00;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff; 
+}
+
+p.sub-desc{
+	margin: 20px 35px; 
+}
+
+.image-container {
+    position: relative;
+    display: inline-block; /* Agar container sesuai dengan ukuran gambar */
+}
+
+.image-container img {
+    display: block; /* Menghilangkan ruang kosong di bawah gambar */
+    width: 100%; /* Agar gambar responsif */
+    height: auto; /* Mempertahankan rasio aspek */
+}
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(252, 251, 0, 0.25); /* Warna kuning dengan transparansi 50% */
+    pointer-events: none; /* Agar overlay tidak mengganggu interaksi dengan elemen di bawahnya */
+}
+.image-container .blur{
+    display: block;
+    width: 100%; /* Gambar responsif */
+    height: auto; /* Mempertahankan rasio aspek */
+    filter: blur(3px); /* Efek blur pada gambar */
+    border: none; /* Menghapus border */
+}
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Posisi vertikal di tengah gambar */
+    left: 50%; /* Posisi horizontal di tengah gambar */
+    transform: translate(-50%, -50%); /* Mengatur posisi teks agar tepat di tengah */
+    color: #ffffff; /* Warna teks */
+    background-color: rgba(1, 1, 1, 0.5); /* Latar belakang semi-transparan */
+    padding: 10px; /* Ruang di sekitar teks */
+    border-radius: 5px; /* Membulatkan sudut latar belakang */
+    text-align: center; /* Memusatkan teks */
+}
+.image-container-our {
+    text-align: center;
+}
+.img-teacher{
+	width: 200px; /* Sesuaikan dengan ukuran gambar */
+    height: 200px; /* Sesuaikan dengan ukuran gambar */
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    border: 5px solid #333; /* Menambahkan border di sekeliling gambar */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+.our-part{
+background-color:#fcfb00;
+padding:50px;	
+}
+/* Tambahkan padding-top pada target section untuk menyesuaikan dengan tinggi menu navigasi */
+#our, #message-us {
+    padding-top: 60px; /* Sesuaikan dengan tinggi menu navigasi */
+    position: relative;
+}
+.message-uss{
+background-color:#010101;
+padding:50px;
+color:#ffffff;
+    justify-content: space-between;
+    margin: 0px;
+}
+.message-us{
+background-color:#010101;
+padding:50px;
+color:#ffffff;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+/* Optional: Styling tambahan untuk button */
+button {
+    padding: 10px 20px;
+    background-color: #fcfb00;
+    color: #010101;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f9f777;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    align-items: center; /* Vertikal alignment tengah */
+    margin-bottom: 15px; /* Jarak antar elemen form */
+}
+
+.form-group label {
+    width: 150px; /* Lebar label, sesuaikan dengan kebutuhan */
+    margin-right: 10px; /* Jarak antara label dan input */
+    text-align: right; /* Menyelaraskan teks ke kanan untuk label */
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"] {
+    flex: 1; /* Membuat input mengisi ruang yang tersisa */
+}
+
+.form-group input[type="radio"] {
+    margin-right: 0px; /* Jarak antara radio button dan label */
+}
+
+.form-container,  {
+width: 45%;}
+
+.output-container{
+	    width: 40%;
+	 border: 2px solid #ffffff; /* Border biru dengan ketebalan 3px */
+            padding: 20px;             /* Padding untuk memberi jarak antara border dan konten */
+            margin: 20px;    
+}
+.form-container input, .form-container textarea {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+footer.footer-end{
+	padding: 20px 30px;
+	margin: 0; 
+	text-align: right;
+	background-color: #fcfb00;
+	font-size: 12px;
+	font-weight: bold;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mini Project">
+    <meta name="keywords" content="None">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="img/revou.png" class="logo" alt="Logo" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#our">Our Profile</a></li>
+                <li><a href="#">Achievement</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+		<div class="image-container">
+        <img src="img/background.jpg" class="blur" alt="Background">
+		<div class="overlay"></div>
+        <div class="text-overlay"><h2>Hi Dhenys, Welcome To Website</h2>
+        <p>Ini adalah Website latihan pertama</p></div>
+    </div>
+            
+			 
+        </section>
+        
+        <section id="our" class="our-part">
+            <h2>Our Facilitation</h2>
+			<div class="image-container-our">
+            <img src="img/teach-1.jpg" class="img-teacher" alt="Background">
+			<img src="img/teach-2.jpg" class="img-teacher" alt="Background">
+			<img src="img/teach-3.jpg" class="img-teacher" alt="Background">
+			</div>
+        </section>
+		
+		<section id="message-us" class="message-uss">
+		<h2>Message Us</h2>
+		<div class="message-us">
+		<div class="form-container form-group">
+        <form id="inputForm">
+		<div class="form-group">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+			</div>
+
+<div class="form-group">
+            <label for="dob">Tanggal Lahir:</label>
+            <input type="date" id="dob" name="dob" required>
+</div>
+<div class="form-group">
+            <label>Jenis Kelamin:</label>
+            <label><input type="radio" name="gender" value="Laki-laki" required> Laki-laki</label>
+            <label><input type="radio" name="gender" value="Perempuan" required> Perempuan</label>
+			</div>
+<div class="form-group">
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+</div>
+            <button type="button" onclick="submitForm()">Kirim</button>
+        </form>
+    </div>
+
+    <div class="output-container">
+        <p><strong>Current time : </strong> <span id="currentDate"></span></p>
+        <p><strong>Nama : </strong> <span id="outputName"></span></p>
+        <p><strong>Tanggal Lahir : </strong> <span id="outputDob"></span></p>
+        <p><strong>Jenis Kelamin : </strong> <span id="outputGender"></span></p>
+        <p><strong>Pesan : </strong> <span id="outputMessage"></span></p>
+    </div>
+	</div>
+        </section>
+        
+    </main>
+    <div>
+	</div>
+    <footer class="footer-end">
+        <p>&copy; 2024 Created By RevoU</p>
+    </footer>
+	<script src="js/script.js"></script>
+</body>
+</html>
